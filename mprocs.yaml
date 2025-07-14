@@ -1,0 +1,16 @@
+procs:
+  aqua-monitor:
+    cmd: ["shuttle", "run", "--port", "8000"]
+    cwd: "<CONFIG_DIR>/shellcon-backend/services/aqua-monitor"
+
+  species-hub:
+    cmd: ["shuttle", "run", "--port", "8001"]
+    cwd: "<CONFIG_DIR>/shellcon-backend/services/species-hub"
+
+  aqua-brain:
+    cmd: ["shuttle", "run", "--port", "8002"]
+    cwd: "<CONFIG_DIR>/shellcon-backend/services/aqua-brain"
+
+  shellcon-frontend:
+    cmd: ["npm", "run", "dev:localhost"]
+    cwd: "<CONFIG_DIR>/shellcon-frontend"
